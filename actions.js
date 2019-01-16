@@ -1,4 +1,4 @@
-import uuid from uuid;
+import uuid from 'uuid';
 
 const ADD_COMMENT = 'ADD_COMMENT';
 const REMOVE_COMMENT = 'REMOVE_COMMENT';
@@ -20,7 +20,7 @@ function addComment(text) {
     }
 }
 
-const boundAddComment = text => dispatch(addComment(text));
+// const boundAddComment = text => dispatch(addComment(text));
 
 // {
 //     type: REMOVE_COMMENT;
@@ -34,7 +34,7 @@ function removeComment(id) {
     }
 }
 
-const boundRemoveComment = id => dispatch(removeComment(id));
+// const boundRemoveComment = id => dispatch(removeComment(id));
 
 // {
 //     type: EDIT_COMMENT;
@@ -50,7 +50,7 @@ function editComment(id, text) {
     }
 }
 
-const boundEditComment = (id, text) => dispatch(editComment(id,text));
+// const boundEditComment = (id, text) => dispatch(editComment(id,text));
 
 // {
 //     type: THUMB_UP_COMMENT;
@@ -66,7 +66,7 @@ function upComment(id, amount) {
     }
 }
 
-const boundUpComment = (id, amount) => dispatch(upComment(id,amount));
+// const boundUpComment = (id, amount) => dispatch(upComment(id,amount));
 
 
 // {
@@ -83,10 +83,5 @@ function downComment(id, amount) {
     }
 }
 
-const boundDownComment = (id, amount) => dispatch(downComment(id,amount));
+// const boundDownComment = (id, amount) => dispatch(downComment(id,amount));
 
-boundAddComment('nowy komentarz!');
-boundRemoveComment(0000);
-boundEditComment(0001,'wyedytowanytext');
-boundUpComment(0001,25);
-boundDownComment(0003,2);
